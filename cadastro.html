@@ -7,9 +7,10 @@
     <title>Cadastro </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 
-<body>
+<body onload="popularTabela()">
     <header>
         <h1> Sistema </h1>
     </header>
@@ -31,40 +32,23 @@
         <h1> Cadastro de Contatos </h1>
         <div>
             <form class="formCadastro">
+                <label for="cpf">CPF:</label>
+                <input id='cpf' type="text" name="cpf" placeholder="###.###.###-##">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome">
+                <input id='nome' type="text" name="nome">
 
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome">
+                <label for="telefone">Telefone:</label>
+                <input id='telefone' type="text" name="telefone" placeholder="(XX) 9 9999-9999">
 
                 <label for="email">E-mail:</label>
-                <input type="email" name="email">
+                <input id='email' type="email" name="email" placeholder="__@__.__">
 
-                <button type="button" name="cadastrar"> Cadastrar </button>
+                <button type="button" name="cadastrar" onclick="adicionar()"> Cadastrar </button>
             </form>
         </div>
 
-        <table id="contatos">
-            <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>E-mail</th>
-                <th></th>]<th></th>
-            </tr>
-            <tr>
-                <td>João</td>
-                <td>Silva</td>
-                <td>joaosilva@email.com </td>
-                <td><button>Editar</button></td>
-                <td><button>Excluir</button></td>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>José</td>
-                <td>mariajose@email.com </td>
-                <td><button>Editar</button></td>
-                <td><button>Excluir</button></td>
-            </tr>
+        <table id="tableContato">
+            <tbody id="tableBody"> </tbody>
         </table>
 
     </section>
