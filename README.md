@@ -5,7 +5,7 @@ Trabalho da disciplina de Desenvolvimento de Sistemas Web
 Página Inicial, Cadastro e Sobre
 Utilizar apenas HTML e CSS
 
-# Conteuúdo Atividade 2
+# Conteúdo Atividade 2
 Validação de formulário
 
 - Campos obrigatórios devem ser preenchidos
